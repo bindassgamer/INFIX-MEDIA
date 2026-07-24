@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infix Media | Building Brands That People Remember</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Infix Media is a premium digital marketing & creative agency in India. We specialize in Brand Building, Web Development, Meta/Google Ads, Video Production, and SEO.">
+  <meta name="keywords" content="Digital Marketing Agency, Creative Agency, Brand Building, Social Media Management, Website Development, SEO India, Performance Marketing, Infix Media">
+  <meta name="author" content="Infix Media">
+  <link rel="canonical" href="http://localhost:3000/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:3000/">
+  <meta property="og:title" content="Infix Media | Building Brands That People Remember">
+  <meta property="og:description" content="Transform your business into a digital powerhouse. High-performance design, advertising, and storytelling tailored for India's leading brands.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:3000/">
+  <meta property="twitter:title" content="Infix Media | Building Brands That People Remember">
+  <meta property="twitter:description" content="Transform your business into a digital powerhouse. High-performance design, advertising, and storytelling tailored for India's leading brands.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- Google Fonts: Syne (Gen Z premium heading) & Plus Jakarta Sans (Modern tech body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome & ScrollReveal CDNs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DigitalMarketingAgency",
+    "name": "Infix Media",
+    "alternateName": "Infix Media Agency",
+    "url": "http://localhost:3000/",
+    "logo": "http://localhost:3000/images/logo.svg",
+    "description": "Infix Media is a premium digital marketing and creative agency serving clients across India.",
+    "tagline": "Building Brands That People Remember.",
+    "telephone": "+919876543210",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://instagram.com/infixmedia",
+      "https://linkedin.com/company/infixmedia",
+      "https://twitter.com/infixmedia"
+    ],
+    "areaServed": "IN",
+    "service": [
+      "Social Media Management",
+      "Website Development",
+      "Meta Ads",
+      "Google Ads",
+      "Brand Building",
+      "Video Production",
+      "SEO",
+      "Performance Marketing"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo">INFIX<span>MEDIA</span></div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar" id="loader-progress"></div>
+      </div>
+      <div class="loader-text">Initializing Creative Engine... <span id="loader-percent">0%</span></div>
+    </div>
+  </div>
+
+  <!-- Custom Glow Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-glow" id="custom-cursor-glow"></div>
+
+  <!-- Background Animated blobs -->
+  <div class="bg-glow-container">
+    <div class="glow-blob blob-purple"></div>
+    <div class="glow-blob blob-blue"></div>
+    <div class="glow-blob blob-cyan"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header sticky-nav">
+    <div class="container navbar">
+      <a href="#home" class="logo">
+        INFIX<span>MEDIA</span>
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-btn-cta">Free Consultation</a>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mob-link">Home</a>
+      <a href="#about" class="mob-link">About</a>
+      <a href="#services" class="mob-link">Services</a>
+      <a href="#portfolio" class="mob-link">Portfolio</a>
+      <a href="#team" class="mob-link">Team</a>
+      <a href="#faq" class="mob-link">FAQ</a>
+      <a href="#contact" class="mob-btn-cta">Book Free Consultation</a>
+    </nav>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-particles" id="particles-canvas"></div>
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Digital Marketing & Creative Agency
+        </div>
+        <h1 class="hero-title">
+          We Don't Just Market Brands.<br>
+          <span class="gradient-text">We Build Them.</span>
+        </h1>
+        <p class="hero-description">
+          Building Brands That People Remember. Infix Media fuses Gen-Z culture, luxury aesthetics, and ROI-driven marketing to scale leading businesses across India.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-glow">Book Free Consultation</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+        
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Brands Empowered</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">X</span>
+            <p class="stat-label">Average ROI Boost</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="25">0</span><span class="stat-plus">M+</span>
+            <p class="stat-label">Ad Impression Reach</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="99">0</span><span class="stat-plus">%</span>
+            <p class="stat-label">Client Retention</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-accent">Who We Are</span>
+          <h2 class="section-title">Redefining the Creative Agency Space</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p class="about-intro">
+              Infix Media is a team of hyper-focused creators, strategists, and tech architects. Based in India, we construct digital assets and marketing blueprints that captivate users, convert audiences, and stand the test of time.
+            </p>
+            <p class="about-details">
+              We bridge the gap between stunning high-end design and hard performance numbers. From startups to nationwide enterprises, our tailored methodologies accelerate market positioning, increase organic discovery, and drive scalable client acquisition.
+            </p>
+            
+            <div class="expert-badges">
+              <span class="expert-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Creative Team</span>
+              <span class="expert-badge"><i class="fa-solid fa-chart-line"></i> Marketing Experts</span>
+              <span class="expert-badge"><i class="fa-solid fa-clapperboard"></i> Video Editors</span>
+              <span class="expert-badge"><i class="fa-solid fa-palette"></i> Designers</span>
+              <span class="expert-badge"><i class="fa-solid fa-code"></i> Developers</span>
+              <span class="expert-badge"><i class="fa-solid fa-chess"></i> Brand Strategists</span>
+            </div>
+          </div>
+          
+          <div class="about-image-card">
+            <div class="glass-card about-card-content">
+              <div class="about-card-glow"></div>
+              <h3>Nationwide Presence</h3>
+              <p>Delivering luxury tech aesthetics and growth campaigns for top-tier clients across Mumbai, Delhi, Bangalore, Pune, and beyond.</p>
+              
+              <div class="location-markers">
+                <div class="marker"><i class="fa-solid fa-location-dot"></i> Mumbai</div>
+                <div class="marker"><i class="fa-solid fa-location-dot"></i> Bangalore</div>
+                <div class="marker"><i class="fa-solid fa-location-dot"></i> Delhi NCR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-accent">Our Capabilities</span>
+          <h2 class="section-title font-title">Engineered to Dominate</h2>
+          <p class="section-desc">We deploy standard-setting services designed to capture market attention and build long-term value.</p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Card 1: Social Media Management -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-brands fa-instagram"></i></div>
+            <h3>Social Media SMM</h3>
+            <p>End-to-end management, content planning, and highly aesthetic curation that establishes authority and increases virality.</p>
+            <div class="service-gradient-glow sg-purple"></div>
+          </div>
+          
+          <!-- Card 2: Website Development -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Website Development</h3>
+            <p>Premium React/Next.js/Vite interactive platforms designed to engage users with smooth micro-interactions and fast speeds.</p>
+            <div class="service-gradient-glow sg-blue"></div>
+          </div>
+
+          <!-- Card 3: Meta Ads -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+            <h3>Meta Ads</h3>
+            <p>Hyper-targeted acquisition funnels on Facebook & Instagram configured to yield high ROAS and scalable conversion rates.</p>
+            <div class="service-gradient-glow sg-cyan"></div>
+          </div>
+
+          <!-- Card 4: Google Ads -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Google Ads</h3>
+            <p>Search, Display, and Performance Max setups capturing high-intent traffic, driving down acquisition costs.</p>
+            <div class="service-gradient-glow sg-purple"></div>
+          </div>
+
+          <!-- Card 5: Brand Building -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3>Brand Building</h3>
+            <p>Identity definition, logo kits, brand guides, typography, and cohesive voice setups that build premium consumer trust.</p>
+            <div class="service-gradient-glow sg-blue"></div>
+          </div>
+
+          <!-- Card 6: Video Production -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+            <h3>Video Production</h3>
+            <p>Cinematic shoot setups, professional editing, commercials, and high-retention short-form content (Reels/YouTube Shorts).</p>
+            <div class="service-gradient-glow sg-cyan"></div>
+          </div>
+
+          <!-- Card 7: Graphic Design -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Graphic Design</h3>
+            <p>Stunning visuals, social assets, outdoor boards, and corporate presentations that communicate luxury value.</p>
+            <div class="service-gradient-glow sg-purple"></div>
+          </div>
+
+          <!-- Card 8: SEO -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h3>SEO</h3>
+            <p>Structured architecture, content writing, link building, and speed optimizations placing you at the top of Google organically.</p>
+            <div class="service-gradient-glow sg-blue"></div>
+          </div>
+
+          <!-- Card 9: Performance Marketing -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+            <h3>Performance Marketing</h3>
+            <p>Data-driven scaling strategies aligning metrics, customer LTV, retargeting flows, and comprehensive attribution dashboards.</p>
+            <div class="service-gradient-glow sg-cyan"></div>
+          </div>
+
+          <!-- Card 10: Content Creation -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+            <h3>Content Creation</h3>
+            <p>Compelling copywriting, blogs, scripts, newsletters, and lead magnets that captivate and drive transaction actions.</p>
+            <div class="service-gradient-glow sg-purple"></div>
+          </div>
+
+          <!-- Card 11: Personal Branding -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h3>Personal Branding</h3>
+            <p>Transforming founders and executives into thought leaders on LinkedIn and X through ghostwriting and executive styling.</p>
+            <div class="service-gradient-glow sg-blue"></div>
+          </div>
+
+          <!-- Card 12: Influencer Marketing -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-users-rectangle"></i></div>
+            <h3>Influencer Marketing</h3>
+            <p>Connecting your brand with top-tier Indian creators and micro-influencers to generate authentic reach and reviews.</p>
+            <div class="service-gradient-glow sg-cyan"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Timeline -->
+    <section class="why-us-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag font-accent">The Infix Edge</span>
+          <h2 class="section-title">Why Brands Partner With Us</h2>
+        </div>
+        
+        <!-- Vertical Timeline -->
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <!-- Node 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-number">01</span>
+              <h3>Creative First</h3>
+              <p>We believe average aesthetics are invisible. Every post, asset, website, and ad we create is meticulously crafted to arrest the user's attention instantly.</p>
+            </div>
+          </div>
+          
+          <!-- Node 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-number">02</span>
+              <h3>ROI Focused</h3>
+              <p>Creativity without results is just art. We measure our success on your bottom-line growth, revenue generated, and digital ad acquisition efficiency.</p>
+            </div>
+          </div>
+
+          <!-- Node 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-number">03</span>
+              <h3>Dedicated Team</h3>
+              <p>No generic offshore outsourcing. You get direct Slack channels and access to specialized experts who live and breathe your brand's growth.</p>
+            </div>
+          </div>
+
+          <!-- Node 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-number">04</span>
+              <h3>Fast Delivery</h3>
+              <p>In the digital landscape, speed is currency. We deploy campaigns, edits, and updates quickly, keeping your brand ahead of market movements.</p>
+            </div>
+          </div>
+
+          <!-- Node 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-number">05</span>
+              <h3>Transparent Pricing</h3>
+              <p>No hidden fees, no opaque contracts, and no flat rates with mysterious bills. Clear pricing structures mapped directly to deliverable output.</p>
+            </div>
+          </div>
+
+          <!-- Node 6 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-number">06</span>
+              <h3>Custom Solutions</h3>
+              <p>We reject cookie-cutter marketing packages. Every brand gets a customized strategy engineered for their specific niche, target audience, and scale goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-accent">Featured Works</span>
+          <h2 class="section-title">Case Studies in Growth</h2>
+          <p class="section-desc">A selection of premium digital assets, high-performing advertising, and brand revamps built for India's boldest brands.</p>
+        </div>
+        
+        <!-- Category Filters -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="website">Websites</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="video">Video</button>
+          <button class="filter-btn" data-filter="ads">Ads</button>
+        </div>
+        
+        <!-- Projects Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          
+          <!-- Project 1: Website -->
+          <div class="glass-card portfolio-card show" data-category="website">
+            <div class="portfolio-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80" alt="E-Commerce Fashion Interface" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="client-name">Vogue Threads</span>
+              <span class="project-tag">Website Development</span>
+              <h3>Luxury E-commerce Fashion Experience</h3>
+              <p>Reconstructed the custom user experience using high-end interactions and fast page-load structures. Boosted conversions by 42%.</p>
+            </div>
+          </div>
+
+          <!-- Project 2: Branding -->
+          <div class="glass-card portfolio-card show" data-category="branding">
+            <div class="portfolio-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&auto=format&fit=crop&q=80" alt="Aesthetic Packaging Branding" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="client-name">Solace Cosmetics</span>
+              <span class="project-tag">Branding & Identity</span>
+              <h3>Minimalist D2C Skincare Rebranding</h3>
+              <p>Curated a modern matte design language, premium packaging structures, and color guidelines targeting Gen Z consumers.</p>
+            </div>
+          </div>
+
+          <!-- Project 3: Social Media -->
+          <div class="glass-card portfolio-card show" data-category="social">
+            <div class="portfolio-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&auto=format&fit=crop&q=80" alt="Social Feed Grid Curation" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="client-name">GymNation India</span>
+              <span class="project-tag">Social Media Management</span>
+              <h3>Community Growth & Instagram Curation</h3>
+              <p>Established a high-contrast dark aesthetic that drove Reels virality, increasing followers by 120k in 90 days.</p>
+            </div>
+          </div>
+
+          <!-- Project 4: Video -->
+          <div class="glass-card portfolio-card show" data-category="video">
+            <div class="portfolio-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&auto=format&fit=crop&q=80" alt="Cinematic video production setup" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="client-name">Zenith Automotive</span>
+              <span class="project-tag">Video Production</span>
+              <h3>EV Cinematic Launch Campaign</h3>
+              <p>Directed, shot, and edited high-fidelity video commercials optimized for social distribution channels, driving 5M+ views.</p>
+            </div>
+          </div>
+
+          <!-- Project 5: Ads -->
+          <div class="glass-card portfolio-card show" data-category="ads">
+            <div class="portfolio-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1542744094-3a31f103e35f?w=600&auto=format&fit=crop&q=80" alt="Advertising metrics screen" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="client-name">Krypton Tech</span>
+              <span class="project-tag">Meta & Google Ads</span>
+              <h3>Performance Marketing Funnel Optimization</h3>
+              <p>Configured lookalike profiling and structural bid management, driving a 6.2X ROAS for a premium SaaS launch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag font-accent">The Architects</span>
+          <h2 class="section-title">The Brains Behind the Brand</h2>
+        </div>
+        
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="glass-card team-card">
+            <div class="member-image">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Aarav Sharma" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3>Aarav Sharma</h3>
+              <span class="member-role">Founder & Brand Strategist</span>
+              <div class="member-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="glass-card team-card">
+            <div class="member-image">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80" alt="Neha Patel" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3>Neha Patel</h3>
+              <span class="member-role">Creative Director</span>
+              <div class="member-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="glass-card team-card">
+            <div class="member-image">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80" alt="Kabir Malhotra" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3>Kabir Malhotra</h3>
+              <span class="member-role">Lead Developer</span>
+              <div class="member-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="glass-card team-card">
+            <div class="member-image">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80" alt="Riya Sen" loading="lazy">
+            </div>
+            <div class="member-info">
+              <h3>Riya Sen</h3>
+              <span class="member-role">Head of Performance Marketing</span>
+              <div class="member-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag font-accent">Testimonials</span>
+          <h2 class="section-title">Client Appreciations</h2>
+        </div>
+        
+        <!-- Slider Container -->
+        <div class="testimonial-slider-container">
+          <div class="testimonial-wrapper" id="testimonial-slider">
+            
+            <!-- Slide 1 -->
+            <div class="glass-card testimonial-card active">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Infix Media transformed our digital brand from the ground up. Their creative team designed a magnificent aesthetic that aligns perfectly with our brand vision. Our Meta Ad conversions grew 4.5X in less than two months!"
+              </p>
+              <div class="client-meta">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80" alt="Aditi Verma" loading="lazy">
+                <div>
+                  <h4>Aditi Verma</h4>
+                  <span>CEO, Velvet Bloom Cosmetics</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="glass-card testimonial-card">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The web development execution from Infix Media was flawless. They created a fluid interactive site that loads instantly. Our customers frequently compliment us on how clean and premium the design feels."
+              </p>
+              <div class="client-meta">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80" alt="Rohan Gupta" loading="lazy">
+                <div>
+                  <h4>Rohan Gupta</h4>
+                  <span>Co-Founder, TechLoom Solutions</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="glass-card testimonial-card">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Infix Media manages our complete performance portfolio. Their search strategies and short-form video concepts increased our website traffic by over 200%. True growth partners who focus heavily on the data."
+              </p>
+              <div class="client-meta">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&auto=format&fit=crop&q=80" alt="Vikram Malhotra" loading="lazy">
+                <div>
+                  <h4>Vikram Malhotra</h4>
+                  <span>Director, Zenith Luxury Properties</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- Slider Navigation Dot buttons -->
+          <div class="slider-dots">
+            <span class="dot active" onclick="setCurrentSlide(0)"></span>
+            <span class="dot" onclick="setCurrentSlide(1)"></span>
+            <span class="dot" onclick="setCurrentSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordions Section -->
+    <section id="faq" class="faq-section">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="section-tag font-accent">Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="faq-accordion-group">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>What industries does Infix Media specialize in?</h3>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <p>We work with D2C brands, luxury tech firms, financial portals, real estate companies, and premium consumer goods. If your brand wants to establish a premium and dominant presence in the digital landscape, we have customized blueprints ready.</p>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>How long does a premium website project take?</h3>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <p>A typical corporate landing page or a highly aesthetic marketing site takes about 2 to 4 weeks, including UX wireframes, visual curation, custom interactions, responsiveness tuning, and testing. Complex web platforms with database backends can range from 4 to 8 weeks.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>Do you manage ad spend budgets directly?</h3>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <p>Clients retain direct ownership of their ad accounts (Meta, Google) and are billed directly by those platforms. Infix Media charges a flat management fee or a performance percentage based on the scope, ensuring there are no conflicts of interest.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>What does "Creative First" mean for my ROI?</h3>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <p>Standard static ads are ignored in modern social feeds. "Creative First" means we design assets that physically capture eyes and arrest thumb movement. Highly optimized visual hooks directly increase CTR (Click-Through Rate), lowering click costs and substantially improving your final ROI.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <h3>How do we begin working together?</h3>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="faq-body">
+              <p>Simply complete the Contact Form below with details about your brand, service requirements, and budget framework. Our strategy coordinators will review your input and schedule a free consultation session within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-info-panel">
+            <div class="section-header">
+              <span class="section-tag font-accent">Start the Engine</span>
+              <h2 class="section-title">Let's Build Something Memorable</h2>
+              <p class="contact-subtext">Ready to transform your business trajectory? Submit your project brief and let our creative strategy team design a growth package tailored for your brand.</p>
+            </div>
+            
+            <div class="contact-direct-links">
+              <div class="direct-link-item">
+                <div class="link-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email Us</h4>
+                  <a href="mailto:hello@infixmedia.in">hello@infixmedia.in</a>
+                </div>
+              </div>
+              <div class="direct-link-item">
+                <div class="link-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4>Call Our Office</h4>
+                  <a href="tel:+919876543210">+91 98765 43210</a>
+                </div>
+              </div>
+              <div class="direct-link-item">
+                <div class="link-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Headquarters</h4>
+                  <p>Infix Towers, BKC, Mumbai - 400051</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form Card -->
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" required placeholder="e.g. Rahul Verma">
+                </div>
+                <div class="form-group">
+                  <label for="email">Work Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="e.g. rahul@company.com">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="e.g. +91 98765 43210">
+                </div>
+                <div class="form-group">
+                  <label for="businessName">Business/Company Name</label>
+                  <input type="text" id="businessName" name="businessName" placeholder="e.g. Acme Retail">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Required Service *</label>
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="Social Media Management">Social Media SMM</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Meta Ads">Meta Ads (FB/IG)</option>
+                    <option value="Google Ads">Google Ads</option>
+                    <option value="Brand Building">Brand Building & Logo Design</option>
+                    <option value="Video Production">Video Production & Reels</option>
+                    <option value="Graphic Design">Graphic Design & Assets</option>
+                    <option value="SEO">Search Engine Optimization (SEO)</option>
+                    <option value="Performance Marketing">Performance Marketing Setup</option>
+                    <option value="Content Creation">Content Creation & Ghostwriting</option>
+                    <option value="Personal Branding">Personal Branding for Founders</option>
+                    <option value="Influencer Marketing">Influencer Marketing Campaign</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Monthly Budget Frame *</label>
+                  <select id="budget" name="budget" required>
+                    <option value="" disabled selected>Select Budget Range</option>
+                    <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000</option>
+                    <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000</option>
+                    <option value="₹1,00,000 - ₹2,50,000">₹1,00,000 - ₹2,50,000</option>
+                    <option value="₹2,50,000+">₹2,50,000+ (Enterprise)</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Project Description *</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your brand goals, current challenges, and project vision..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-glow btn-full" id="submit-btn">
+                Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+              </button>
+              
+              <!-- Form Success/Error Notifications -->
+              <div class="form-notification success" id="form-success">
+                <i class="fa-solid fa-circle-check"></i> <span id="form-success-text">Thank you! Your inquiry has been received.</span>
+              </div>
+              <div class="form-notification error" id="form-error">
+                <i class="fa-solid fa-triangle-exclamation"></i> <span id="form-error-text">Submission failed. Please verify your entries.</span>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container footer-grid">
+      
+      <div class="footer-info">
+        <a href="#home" class="logo">INFIX<span>MEDIA</span></a>
+        <p class="footer-bio">Building Brands That People Remember. A premier digital marketing and creative agency engineering luxury digital ecosystems for top-tier companies across India.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Agency Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Capabilities</h3>
+        <a href="#services">Social Media SMM</a>
+        <a href="#services">Website Development</a>
+        <a href="#services">Meta Ads</a>
+        <a href="#services">Google Ads</a>
+        <a href="#services">Video Production</a>
+        <a href="#services">SEO Optimization</a>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Infix Media. All Rights Reserved. Built for high performance.</p>
+      <div class="bottom-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <!-- Main Script -->
+  <script src="main.js"></script>
+</body>
+</html>+
