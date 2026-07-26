@@ -25,7 +25,8 @@
     "express-rate-limit": "^8.6.0",
     "helmet": "^8.3.0",
     "mongoose": "^9.8.0",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
