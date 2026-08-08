@@ -1,3 +1,7 @@
-﻿
+# Ignore node modules and logs
 node_modules/
-.vercel
+.vercel/
+*.log
+vercel-deploy*.log
+tmp.json
+submissions.json
