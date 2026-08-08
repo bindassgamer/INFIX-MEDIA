@@ -34,7 +34,29 @@ async function connectIfNeeded() {
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ success: false, message: 'Method not allowed' });
   try {
-    const { name, email, phone, businessName, business, service, budget, message } = req.body || {};
+    // Robust body parsing: prefer req.body but parse raw body if necessary
+    let body = req.body || {};
+    if (!body || Object.keys(body).length === 0) {
+      try {
+        body = await new Promise((resolve, reject) => {
+          let data = '';
+          req.on('data', (chunk) => (data += chunk));
+          req.on('end', () => {
+            if (!data) return resolve({});
+            try {
+              resolve(JSON.parse(data));
+            } catch (e) {
+              reject(new Error('Invalid JSON'));
+            }
+          });
+          req.on('error', reject);
+        });
+      } catch (e) {
+        return res.status(400).json({ success: false, message: 'Invalid JSON' });
+      }
+    }
+
+    const { name, email, phone, businessName, business, service, budget, message } = body || {};
     if (!name || !email || !phone || !service || !budget || !message) {
       return res.status(400).json({ success: false, message: 'Missing required fields' });
     }
