@@ -34,8 +34,17 @@ async function connectIfNeeded() {
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ success: false, message: 'Method not allowed' });
   try {
-    // Robust body parsing: prefer req.body but parse raw body if necessary
-    let body = req.body || {};
+    // Robust body parsing: try safe access to req.body first (catch parser errors), otherwise parse raw body
+    let body = {};
+    try {
+      // accessing req.body can throw if body parsing fails in the runtime; catch and fallback
+      if (req && typeof req.body !== 'undefined' && req.body) {
+        body = req.body;
+      }
+    } catch (err) {
+      // fallthrough to manual raw parsing
+    }
+
     if (!body || Object.keys(body).length === 0) {
       try {
         body = await new Promise((resolve, reject) => {
