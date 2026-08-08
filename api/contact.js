@@ -53,6 +53,8 @@ module.exports = async (req, res) => {
           req.on('end', () => {
             if (!data) return resolve({});
             try {
+              // strip UTF-8 BOM if present
+              if (data && data.charCodeAt(0) === 0xFEFF) data = data.slice(1);
               resolve(JSON.parse(data));
             } catch (e) {
               console.error('contact: raw body parse failed, raw=', data ? (data.length > 1000 ? data.slice(0,1000) + '... (truncated)' : data) : '<empty>');
