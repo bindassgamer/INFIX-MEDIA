@@ -72,7 +72,8 @@ module.exports = async (req, res) => {
     }
     return res.status(500).json({ success: false, message: 'Failed to save submission' });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ success: false, message: 'Server error' });
+    console.error('Unhandled error in contact handler:', err);
+    const debug = process.env.DEBUG === 'true' || (req.query && req.query.debug === '1');
+    res.status(500).json({ success: false, message: debug ? (err.message || 'Server error') : 'Server error', ...(debug ? { stack: err.stack } : {}) });
   }
 };
