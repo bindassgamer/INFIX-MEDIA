@@ -1,0 +1,71 @@
+﻿node.exe : Vercel CLI 58.9.0 (Node.js 24.11.0)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\praja\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 58.9.0 (Node.js 24.11.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading teams…
+
+  Directory       ~\copilot-worktrees\INFIX-MEDIA\bindassgamer-effective-meme
+
+Searching for existing projects…
+
+  Detected Express (Output Directory: N/A)
+
+✓ Created         prajapatiabhay190-5869s-projects/bindassgamer-effective-meme
+Deploying prajapatiabhay190-5869s-projects/bindassgamer-effective-meme
+Uploading [--------------------] (0.0B/292.1KB)
+Uploading [=====---------------] (80.1KB/292.1KB)
+Uploading [==========----------] (153.3KB/292.1KB)
+Uploading [===============-----] (224.6KB/292.1KB)
+Uploading [====================] (292.1KB/292.1KB)
+  Inspect         
+https://vercel.com/prajapatiabhay190-5869s-projects/bindassgamer-effective-meme/4iRz2zPgMWc6W3t7xCdb234BXNAP
+  Production      https://bindassgamer-effective-meme-rx31w74zm.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 24 deployment files...
+Running "vercel build"
+Vercel CLI 58.1.0
+Installing dependencies...
+npm warn deprecated uuid@9.0.1: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  
+For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+added 138 packages in 2s
+26 packages are looking for funding
+run `npm fund` for details
+Build Completed in /vercel/output [5s]
+Deploying outputs...
+[2K[1A[2K[G  Production      https://bindassgamer-effective-meme-rx31w74zm.vercel.app
+Completing…
+▲ Aliased         https://bindassgamer-effective-meme.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_4iRz2zPgMWc6W3t7xCdb234BXNAP",
+    "url": "https://bindassgamer-effective-meme-rx31w74zm.vercel.app",
+    "inspectorUrl": "https://vercel.com/prajapatiabhay190-5869s-projects/bindassgamer-effective-meme/4iRz2zPgMWc6W3t7xCdb234BXNAP",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_4iRz2zPgMWc6W3t7xCdb234BXNAP"
+  },
+  "message": "Deployment bindassgamer-effective-meme-rx31w74zm.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://bindassgamer-effective-meme-rx31w74zm.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect bindassgamer-effective-meme-rx31w74zm.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}

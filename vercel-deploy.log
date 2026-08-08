@@ -1,0 +1,9 @@
+﻿node.exe : Vercel CLI 58.9.0 (Node.js 24.11.0)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\praja\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 58.9.0 (Node.js 24.11.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading teams…
+Error: User not found.

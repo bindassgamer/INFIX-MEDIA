@@ -1,0 +1,57 @@
+﻿node.exe : Vercel CLI 58.9.0 (Node.js 24.11.0)
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\praja\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 58.9.0 (Node.js 24.11.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Deploying bindassgamer-effective-meme
+Uploading [--------------------] (0.0B/3.2KB)
+Uploading [====================] (3.2KB/3.2KB)
+  Inspect         
+https://vercel.com/prajapatiabhay190-5869s-projects/bindassgamer-effective-meme/Fa6tFEBMRuiM6S71gzHL5A2983P8
+  Production      https://bindassgamer-effective-meme-dlwgxnvlx.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Downloading 25 deployment files...
+Restored build cache from previous deployment (4iRz2zPgMWc6W3t7xCdb234BXNAP)
+Running "vercel build"
+Vercel CLI 58.1.0
+Installing dependencies...
+up to date in 602ms
+26 packages are looking for funding
+run `npm fund` for details
+Build Completed in /vercel/output [5s]
+Deploying outputs...
+[2K[1A[2K[G  Production      https://bindassgamer-effective-meme-dlwgxnvlx.vercel.app
+Completing…
+▲ Aliased         https://bindassgamer-effective-meme.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_Fa6tFEBMRuiM6S71gzHL5A2983P8",
+    "url": "https://bindassgamer-effective-meme-dlwgxnvlx.vercel.app",
+    "inspectorUrl": "https://vercel.com/prajapatiabhay190-5869s-projects/bindassgamer-effective-meme/Fa6tFEBMRuiM6S71gzHL5A2983P8",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_Fa6tFEBMRuiM6S71gzHL5A2983P8"
+  },
+  "message": "Deployment bindassgamer-effective-meme-dlwgxnvlx.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://bindassgamer-effective-meme-dlwgxnvlx.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect bindassgamer-effective-meme-dlwgxnvlx.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
