@@ -3,7 +3,8 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
 
-const SUBMISSIONS_FILE = path.join(process.cwd(), 'submissions.json');
+const os = require('os');
+const SUBMISSIONS_FILE = process.env.SUBMISSIONS_FILE || path.join(os.tmpdir(), 'submissions.json');
 const ADMIN_SECRET = process.env.ADMIN_SECRET || process.env.ADMIN_PASSWORD || 'change-this-secret';
 
 function signToken(payload, expiresIn = '24h') {
