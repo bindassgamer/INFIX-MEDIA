@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 {
   "version": 2,
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1.js" },
+    { "src": "/contact", "dest": "/api/contact.js" },
+    { "src": "/contacts", "dest": "/api/contacts.js" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
+=======
+{"version":2,"routes":[{"src":"/api/(.*)","dest":"/api/$1.js"},{"src":"/contact","dest":"/api/contact.js"},{"src":"/contacts","dest":"/api/contacts.js"},{"handle":"filesystem"},{"src":"/(.*)","dest":"/public/$1"}] }
+>>>>>>> fb42202 (Route /contact and /contacts to serverless endpoints)
