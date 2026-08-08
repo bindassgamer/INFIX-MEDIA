@@ -55,6 +55,7 @@ module.exports = async (req, res) => {
             try {
               resolve(JSON.parse(data));
             } catch (e) {
+              console.error('contact: raw body parse failed, raw=', data ? (data.length > 1000 ? data.slice(0,1000) + '... (truncated)' : data) : '<empty>');
               reject(new Error('Invalid JSON'));
             }
           });
